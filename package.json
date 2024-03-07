@@ -1,0 +1,43 @@
+{
+  "name": "node-avshrink",
+  "author": "Daniele Rubetti",
+  "description": "A small Node.js script to convert audio and video files using FFmpeg.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "github:drubetti/node-avshrink",
+  "type": "module",
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
+  },
+  "scripts": {
+    "build": "npm run build:types && npm run build:js",
+    "build:js": "babel src --out-dir dist --extensions \".ts\"",
+    "build:types": "tsc --emitDeclarationOnly",
+    "prepare": "husky",
+    "start": "npm run build:js && node dist",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/plugin-syntax-import-assertions": "^7.23.3",
+    "@babel/plugin-transform-class-properties": "^7.23.3",
+    "@babel/plugin-transform-runtime": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-typescript": "^7.23.3",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.20",
+    "babel-core": "^7.0.0-bridge.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.23.9",
+    "dotenv": "^16.4.5",
+    "execa": "^8.0.1",
+    "source-map-support": "^0.5.21"
+  }
+}
