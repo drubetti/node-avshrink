@@ -2,7 +2,7 @@
   "name": "node-avshrink",
   "author": "Daniele Rubetti",
   "description": "A small Node.js script to convert audio and video files using FFmpeg.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "repository": "github:drubetti/node-avshrink",
   "type": "module",
@@ -19,25 +19,25 @@
     "type-check:watch": "npm run type-check -- --watch"
   },
   "devDependencies": {
-    "@babel/cli": "^7.23.9",
-    "@babel/core": "^7.23.9",
-    "@babel/plugin-syntax-import-assertions": "^7.23.3",
-    "@babel/plugin-transform-class-properties": "^7.23.3",
-    "@babel/plugin-transform-runtime": "^7.23.9",
-    "@babel/preset-env": "^7.23.9",
-    "@babel/preset-typescript": "^7.23.3",
-    "@tsconfig/node20": "^20.1.2",
-    "@types/node": "^20.11.20",
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/plugin-syntax-import-assertions": "^7.28.6",
+    "@babel/plugin-transform-class-properties": "^7.28.6",
+    "@babel/plugin-transform-runtime": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-typescript": "^7.28.5",
+    "@tsconfig/node24": "^24.0.4",
+    "@types/node": "^24.12.0",
     "babel-core": "^7.0.0-bridge.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
-    "prettier": "3.2.5",
-    "typescript": "^5.3.3"
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.3",
+    "prettier": "3.8.1",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@babel/runtime": "^7.23.9",
-    "dotenv": "^16.4.5",
-    "execa": "^8.0.1",
+    "@babel/runtime": "^7.28.6",
+    "dotenv": "^17.3.1",
+    "execa": "^9.6.1",
     "source-map-support": "^0.5.21"
   }
 }
